@@ -1,0 +1,116 @@
+{% load static %}
+{% block nav %}
+    <nav style="width: 100%;height: 30px;background-color: transparent;">
+        <img id="logo" src="https://ik.imagekit.io/sheryians/Sheryians_logo_EzwgcppnD" alt="">
+        <a href="{% url 'app1:demo' %}" id="code">Sheryians coding school</a>
+        <a href="{% url 'app1:home' %}" id="home">Home</a>
+        <a href="{% url 'app1:course' %}" id="course">Courses</a>
+        <a href="{% url 'app1:boot' %}" id="course">Bootcamp(Kodr)</a>
+        <a href="{% url 'app1:call' %}" id="call">Request Callback</a>
+        <a href="{% url 'app1:sign' %}" id="sign"><Button id="button" style="background-color: darkcyan;">Sign in</Button></a>
+    </nav></div>
+{% endblock nav %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'course.css' %}">
+{% endblock css %}
+
+<div style="width: 100%;height: 100px;background-color: transparent;padding-top: 30px;"></div>
+<div style="width: 20%;height: 30px;background-color: transparent;color: white;float: left;padding-left: 50px;font-size: 30px;font-style: italic;word-spacing: 20px;">We're not a</div>
+<div style="width: 30%;height: 30px;background-color: transparent;color: darkcyan;float: left;font-size: 30px;font-style: italic;word-spacing: 10px;margin-right: 20px;">course</div>
+<div style="width: 100%;height: 50px;background-color: transparent;color: darkcyan;float: left;font-size: 30px;font-style: italic;padding-left: 50px;">factory.</div>
+<div style="width: 100%;height: 30px;background-color: transparent;float: left;"></div>
+<div style="width: 100%;height: 50px;background-color: transparent;float: left;color: white;font-size: 30px;padding-left: 50px;"><h6>We focus on courses that really help.</h6></div>
+<div style="width: 100%;height: 30px;background-color: transparent;float: left;"></div>
+<div style="width: 100%;height: 30px;background-color: transparent;float: left;color: white;padding-left: 50px;font-size: 20px;">Courses which we do</div>
+<div style="width: 100%;height: 30px;background-color: transparent;float: left;"></div>
+
+
+{% block course %}
+<div>
+    <div style="width: 70px;height: 300px;background-color: transparent;float: left;"></div>
+    <div style="width: 20%;height: 300px;background-color: black;float: left;border-radius: 30px;">
+        <img style="float: left;width: 100%;border-radius: 30px;" src="https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg" alt="">
+        <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+        <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Front-End Domination:</div>
+        <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Create Anything with Code</div>    
+        <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;"><Button style="width: 50px;background-color: gray;color: black;">HINDI</Button></div>  
+        <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+        <div style="width: 100%;height: 20px;color: darkcyan;background-color: transparent;float: left;">Limited time discount</div>   
+        <div style="width: 20%;height: 20px;background-color: transparent;color: white;float: left;">4999</div>
+        <div style="width: 20%;height: 20px;background-color: transparent;color: gray;float: left;"><strike>9999</strike></div>
+        <div style="width: 30%;height: 15px;background-color: white;color: black;float: left;"><button>50% OFF</button></div>
+        <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+        <!-- <div style="width: 20%;height: 20px;background-color: transparent;float: left;"></div> -->
+        <div style="width: 100%;height: 20px;background-color: transparent;color: black;float: left;"><button id="d" style="background-color: darkcyan;width: 100%;height: 30px;">View Details</button></div>
+    </div>
+    <div style="width: 15px;height: 300px;background-color: transparent;float: left;"></div>
+    <div style="width: 20%;height: 300px;background-color: black;float: left;border-radius: 30px;">
+        <img style="float: left;width: 100%;border-radius: 30px;" src="https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg" alt="">
+        <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+        <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Back-End Domination:</div>
+        <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Create Efficient Back-End.</div>    
+        <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;"><Button style="width: 50px;background-color: gray;color: black;">HINDI</Button></div>  
+        <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+        <div style="width: 100%;height: 20px;color: darkcyan;background-color: transparent;float: left;">Limited time discount</div>   
+        <div style="width: 20%;height: 20px;background-color: transparent;color: white;float: left;">5999</div>
+        <div style="width: 20%;height: 20px;background-color: transparent;color: gray;float: left;"><strike>11999</strike></div>
+        <div style="width: 30%;height: 15px;background-color: white;color: black;float: left;"><button>50% OFF</button></div>
+        <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+        <!-- <div style="width: 20%;height: 20px;background-color: transparent;float: left;"></div> -->
+        <div style="width: 100%;height: 20px;background-color: transparent;color: black;float: left;"><button id="d" style="background-color: darkcyan;width: 100%;height: 30px;">View Details</button></div>
+    </div>
+    <div style="width: 15px;height: 300px;background-color: transparent;float: left;"></div>
+    <div style="width: 20%;height: 300px;background-color: black;float: left;border-radius: 30px;">
+        <img style="float: left;width: 200px;border-radius: 30px;" src="https://ik.imagekit.io/sheryians/courses_gif/undefined-apti_reasoning_45vyAnZ4y.jpeg" alt="">
+        <!-- <img style="float: left;width: 100%;" src="https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg" alt=""> -->
+        <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+        <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Apptitute & Reasoning for</div>
+        <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Campus Placements</div>    
+        <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;"><Button style="width: 70px;background-color: gray;color: black;">HINGLISH</Button></div>  
+        <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+        <div style="width: 100%;height: 20px;color: darkcyan;background-color: transparent;float: left;">Limited time discount</div>   
+        <div style="width: 20%;height: 20px;background-color: transparent;color: white;float: left;">5999</div>
+        <div style="width: 20%;height: 20px;background-color: transparent;color: gray;float: left;"><strike>11999</strike></div>
+        <div style="width: 30%;height: 15px;background-color: transparent;color: black;float: left;"><button>50% OFF</button></div>
+        <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+        <!-- <div style="width: 20%;height: 20px;background-color: transparent;float: left;"></div> -->
+        <div style="width: 100%;height: 20px;background-color: transparent;color: black;float: left;"><button id="d" style="background-color: darkcyan;width: 100%;height: 30px;">View Details</button></div>
+    </div>
+    <div style="width: 15px;height: 300px;background-color: transparent;float: left;"></div>
+    <div style="width: 20%;height: 300px;background-color: black;float: left;border-radius: 30px;">
+        <img style="float: left;width: 200px;border-radius: 30px;" src="https://ik.imagekit.io/sheryians/courses_gif/undefined-javaas_Large_jY0Wighav__6PygWBZQ.jpeg" alt="">
+        <!-- <img style="float: left;width: 100%;" src="https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg" alt=""> -->
+        <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+        <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Java & DSA Domination</div>
+        <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Create Efficient Back-End.</div>    
+        <div style="width: 100%;height: 20px;background-color: transparent;color: transparent;float: left;"><Button style="width: 70px;background-color: gray;color: black;">HINGLISH</Button></div>  
+        <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+        <div style="width: 100%;height: 20px;color: darkcyan;background-color: transparent;float: left;">Limited time discount</div>   
+        <div style="width: 20%;height: 20px;background-color: transparent;color: white;float: left;">5999</div>
+        <div style="width: 20%;height: 20px;background-color: transparent;color: gray;float: left;"><strike style="float: left;color: gray;">11999</strike></div>
+        <div style="width: 30%;height: 15px;background-color: white;color: black;float: left;"><button style="background-color: white;">50% OFF</button></div>
+        <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+        <!-- <div style="width: 20%;height: 20px;background-color: transparent;float: left;"></div> -->
+        <div style="width: 100%;height: 20px;background-color: transparent;color: black;float: left;"><button id="d" style="background-color: darkcyan;width: 90%;height: 30px;">View Details</button></div>
+    </div>
+    <div style="width: 100%;height: 100px;background-color: transparent;float: left;"></div>
+    <div style="width: 6%;height: 300px;background-color: transparent;float: left;"></div>
+    <div style="width: 80%;height: 300px;background-color: transparent;float: left;">
+        <div style="width: 27%;height: 300px;background-color: black;border-radius: 30px;">
+            <img style="width: 100%;border-radius: 30px;" src="https://ik.imagekit.io/sheryians/courses_gif/undefined-maxresdefault_5-AHh9_1Y.jpg" alt="">
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Java & DSA Domination</div>
+            <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Create Efficient Back-End.</div>    
+            <div style="width: 100%;height: 20px;background-color: transparent;color: transparent;float: left;"><Button style="width: 70px;background-color: gray;color: black;">HINGLISH</Button></div>  
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <div style="width: 100%;height: 20px;color: darkcyan;background-color: transparent;float: left;">Limited time discount</div>   
+            <div style="width: 20%;height: 20px;background-color: transparent;color: white;float: left;">5999</div>
+            <div style="width: 20%;height: 20px;background-color: transparent;color: gray;float: left;"><strike style="float: left;color: gray;">11999</strike></div>
+            <div style="width: 30%;height: 15px;background-color: white;color: black;float: left;"><button style="background-color: white;">50% OFF</button></div>
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <!-- <div style="width: 20%;height: 20px;background-color: transparent;float: left;"></div> -->
+            <div style="width: 100%;height: 20px;background-color: transparent;color: black;float: left;"><button id="d" style="background-color: darkcyan;width: 100%;height: 30px;">View Details</button></div>
+        </div>
+    </div>
+    {% endblock course %}

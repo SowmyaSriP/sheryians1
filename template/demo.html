@@ -1,0 +1,239 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'demo.css' %}">
+    {% block css %}
+    {% endblock css %}
+</head>
+<style>
+    #q:hover{
+        color: darkcyan;
+    }
+</style>
+<body>
+    <div style="width: 100%;height: 30px;background-color: transparent;">
+    {% block nav %}
+    <nav style="width: 100%;height: 30px;background-color: transparent;">
+        <img id="logo" src="https://ik.imagekit.io/sheryians/Sheryians_logo_EzwgcppnD" alt="">
+        <a href="{% url 'app1:demo' %}" id="code">Sheryians coding school</a>
+        <a href="{% url 'app1:home' %}" id="home">Home</a>
+        <a href="{% url 'app1:course' %}" id="course">Courses</a>
+        <a href="{% url 'app1:boot' %}" id="course">Bootcamp(Kodr)</a>
+        <a href="{% url 'app1:call' %}" id="call">Request Callback</a>
+        <a href="{% url 'app1:sign' %}" id="sign"><Button id="button" style="background-color: darkcyan;">Sign in</Button></a>
+    </nav></div>
+    {% endblock nav %}
+    <div style="width: 100%;height: 250px;background-color: transparent;">
+        <h1 class="h1" style="float: left;color: white;">We only <h1 class="h2" style="color: darkcyan;float: left;"> teach</h1></h1><br>
+        <h1 class="h3" style="color: white;">what we are really </h1><br>
+        <h1 class="h4" style="color: white;">really good at.</h1>
+    </div>
+    <div style="width: 100%;height: 42px;background-color: transparent;">
+        <div ><h6 class="a" id="a">Get ready to accelerate your</h6><br></div>
+        <div ><h6 class="a" id="b">career with customised courses</h6><br></div>
+        <div ><h6 class="a" id="c">and leave your mark in the tech</h6><br></div>
+        <div ><h6 class="a" id="d">industry</h6></div>
+    </div>
+    <div style="width: 100%;height: 40px;background-color: transparent;">
+        <a href="{% url 'app1:impact' %}"><button id="check" style="background-color: rgb(83, 161, 161);width: 200px;height: 20px;">Check Cources-Make an Impact</button></a>
+        <!-- <center><button id="check" style="background-color: rgb(83, 161, 161);width: 300px;height: 30px;">Check Cources-Make an Impact</button></center> -->
+    </div>
+    <div style="width: 100%;height: 50px;background-color: transparent;">
+        <b id="aa" style="color: white;float: left;">25K</b>
+        <b id="ab" style="color: white;float: left;">20+</b>
+        <b id="ac" style="color: white;float: left;">431K+</b>
+    </div>
+    <div id="di" style="width: 100%;height: 30px;background-color: transparent;">
+        <h1 class="di" id="a1" style="color: white;float: left;">Students taught</h1>
+        <h1 class="di" id="a2" style="color: white;float: left;">Instructors</h1>
+        <h1 class="di" id="a3" style="color: white;float: left;">Youtube subs</h1>
+    </div>
+    <div style="width: 100%;height: 100px;background-color: transparent;"></div>
+    <div id="we" style="color: white;">we do whatever it takes to help you</div>
+    <div id="un" style="color: darkcyan;">understand the concepts</div>
+    <div>
+        <img id="pic" style="width: 600px;height: 250px;" src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_640.jpg" alt="">
+    </div>
+    <div style="width: 100%;height: 70px;background-color: transparent;"></div>
+    <div><button style="background-color: darkcyan;width: 200px;height: 30px;" id="fr">Explore free trail</button></div>
+    <div style="width: 100%;height: 70px;background-color: transparent;"></div>
+    <h1 id="co">Courses Offered.</h1>
+    <div style="width: 100%;height: 50px;background-color: transparent;"></div>
+    {% block course %}
+    <div>
+        <div style="width: 70px;height: 300px;background-color: transparent;float: left;"></div>
+        <div style="width: 20%;height: 300px;background-color: black;float: left;border-radius: 30px;">
+            <img style="float: left;width: 100%;border-radius: 30px;" src="https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg" alt="">
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Front-End Domination:</div>
+            <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Create Anything with Code</div>    
+            <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;"><Button style="width: 50px;background-color: gray;color: black;">HINDI</Button></div>  
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <div style="width: 100%;height: 20px;color: darkcyan;background-color: transparent;float: left;">Limited time discount</div>   
+            <div style="width: 20%;height: 20px;background-color: transparent;color: white;float: left;">4999</div>
+            <div style="width: 20%;height: 20px;background-color: transparent;color: gray;float: left;"><strike>9999</strike></div>
+            <div style="width: 30%;height: 15px;background-color: white;color: black;float: left;"><button>50% OFF</button></div>
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <!-- <div style="width: 20%;height: 20px;background-color: transparent;float: left;"></div> -->
+            <div style="width: 100%;height: 20px;background-color: transparent;color: black;float: left;"><button id="d" style="background-color: darkcyan;width: 100%;height: 30px;">View Details</button></div>
+        </div>
+        <div style="width: 15px;height: 300px;background-color: transparent;float: left;"></div>
+        <div style="width: 20%;height: 300px;background-color: black;float: left;border-radius: 30px;">
+            <img style="float: left;width: 100%;border-radius: 30px;" src="https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg" alt="">
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Back-End Domination:</div>
+            <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Create Efficient Back-End.</div>    
+            <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;"><Button style="width: 50px;background-color: gray;color: black;">HINDI</Button></div>  
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <div style="width: 100%;height: 20px;color: darkcyan;background-color: transparent;float: left;">Limited time discount</div>   
+            <div style="width: 20%;height: 20px;background-color: transparent;color: white;float: left;">5999</div>
+            <div style="width: 20%;height: 20px;background-color: transparent;color: gray;float: left;"><strike>11999</strike></div>
+            <div style="width: 30%;height: 15px;background-color: white;color: black;float: left;"><button>50% OFF</button></div>
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <!-- <div style="width: 20%;height: 20px;background-color: transparent;float: left;"></div> -->
+            <div style="width: 100%;height: 20px;background-color: transparent;color: black;float: left;"><button id="d" style="background-color: darkcyan;width: 100%;height: 30px;">View Details</button></div>
+        </div>
+        <div style="width: 15px;height: 300px;background-color: transparent;float: left;"></div>
+        <div style="width: 20%;height: 300px;background-color: black;float: left;border-radius: 30px;">
+            <img style="float: left;width: 200px;border-radius: 30px;" src="https://ik.imagekit.io/sheryians/courses_gif/undefined-apti_reasoning_45vyAnZ4y.jpeg" alt="">
+            <!-- <img style="float: left;width: 100%;" src="https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg" alt=""> -->
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Apptitute & Reasoning for</div>
+            <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Campus Placements</div>    
+            <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;"><Button style="width: 70px;background-color: gray;color: black;">HINGLISH</Button></div>  
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <div style="width: 100%;height: 20px;color: darkcyan;background-color: transparent;float: left;">Limited time discount</div>   
+            <div style="width: 20%;height: 20px;background-color: transparent;color: white;float: left;">5999</div>
+            <div style="width: 20%;height: 20px;background-color: transparent;color: gray;float: left;"><strike>11999</strike></div>
+            <div style="width: 30%;height: 15px;background-color: transparent;color: black;float: left;"><button>50% OFF</button></div>
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <!-- <div style="width: 20%;height: 20px;background-color: transparent;float: left;"></div> -->
+            <div style="width: 100%;height: 20px;background-color: transparent;color: black;float: left;"><button id="d" style="background-color: darkcyan;width: 100%;height: 30px;">View Details</button></div>
+        </div>
+        <div style="width: 15px;height: 300px;background-color: transparent;float: left;"></div>
+        <div style="width: 20%;height: 300px;background-color: black;float: left;border-radius: 30px;">
+            <img style="float: left;width: 200px;border-radius: 30px;" src="https://ik.imagekit.io/sheryians/courses_gif/undefined-javaas_Large_jY0Wighav__6PygWBZQ.jpeg" alt="">
+            <!-- <img style="float: left;width: 100%;" src="https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg" alt=""> -->
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Java & DSA Domination</div>
+            <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Create Efficient Back-End.</div>    
+            <div style="width: 100%;height: 20px;background-color: transparent;color: transparent;float: left;"><Button style="width: 70px;background-color: gray;color: black;">HINGLISH</Button></div>  
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <div style="width: 100%;height: 20px;color: darkcyan;background-color: transparent;float: left;">Limited time discount</div>   
+            <div style="width: 20%;height: 20px;background-color: transparent;color: white;float: left;">5999</div>
+            <div style="width: 20%;height: 20px;background-color: transparent;color: gray;float: left;"><strike style="float: left;color: gray;">11999</strike></div>
+            <div style="width: 30%;height: 15px;background-color: white;color: black;float: left;"><button style="background-color: white;">50% OFF</button></div>
+            <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+            <!-- <div style="width: 20%;height: 20px;background-color: transparent;float: left;"></div> -->
+            <div style="width: 100%;height: 20px;background-color: transparent;color: black;float: left;"><button id="d" style="background-color: darkcyan;width: 90%;height: 30px;">View Details</button></div>
+        </div>
+        <div style="width: 100%;height: 100px;background-color: transparent;float: left;"></div>
+        <div style="width: 6%;height: 300px;background-color: transparent;float: left;"></div>
+        <div style="width: 80%;height: 300px;background-color: transparent;float: left;">
+            <div style="width: 27%;height: 300px;background-color: black;border-radius: 30px;">
+                <img style="width: 100%;border-radius: 30px;" src="https://ik.imagekit.io/sheryians/courses_gif/undefined-maxresdefault_5-AHh9_1Y.jpg" alt="">
+                <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+                <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Java & DSA Domination</div>
+                <div style="width: 100%;height: 20px;background-color: transparent;color: white;float: left;">Create Efficient Back-End.</div>    
+                <div style="width: 100%;height: 20px;background-color: transparent;color: transparent;float: left;"><Button style="width: 70px;background-color: gray;color: black;">HINGLISH</Button></div>  
+                <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+                <div style="width: 100%;height: 20px;color: darkcyan;background-color: transparent;float: left;">Limited time discount</div>   
+                <div style="width: 20%;height: 20px;background-color: transparent;color: white;float: left;">5999</div>
+                <div style="width: 20%;height: 20px;background-color: transparent;color: gray;float: left;"><strike style="float: left;color: gray;">11999</strike></div>
+                <div style="width: 30%;height: 15px;background-color: white;color: black;float: left;"><button style="background-color: white;">50% OFF</button></div>
+                <div style="width: 100%;height: 20px;background-color: transparent;float: left;"></div>
+                <!-- <div style="width: 20%;height: 20px;background-color: transparent;float: left;"></div> -->
+                <div style="width: 100%;height: 20px;background-color: transparent;color: black;float: left;"><button id="d" style="background-color: darkcyan;width: 100%;height: 30px;">View Details</button></div>
+            </div>
+        </div>
+        {% endblock course %}
+        <div style="width: 100%;height: 150px;background-color: transparent;float: left;"></div>
+        <div style="width: 100%;height: 30px;background-color: transparent;float: left;">
+            <div style="width: 100%;height: 30px;background-color: transparent;word-spacing: 15px;">
+                <span style="padding-left: 350px;float: left;font-size: 30px;color: white;">Top</span>
+                <div style="width: 20px;height: 30px;background-color: transparent;float: left;"></div>
+                <span style="color: darkcyan;float: left;font-size: 30px;">Companies</span>
+                <span style="padding-left: 10px;float: left;font-size: 30px;color: white;">our students</span>
+            </div>
+            <div style="width: 100%;height: 30px;background-color: transparent;float: left;word-spacing: 15px;">
+                <span style="width: 100%;color: white;font-size: 30px;padding-left: 450px;">working with</span>
+            </div>
+        </div>
+        
+
+        <div style="width: 100%;height: 150px;background-color: transparent;float: left;"></div>
+        <div style="width: 100%;height: 170px;background-color: transparent;float: left;">
+            <img style="width: 600px;padding-left: 250px;" src="https://ik.imagekit.io/sheryians/companies-logo/companies_CcvVE6pUo.png" alt="">
+        </div>
+
+        <div style="width: 100%;height: 150px;background-color: transparent;float: left;">
+            <button style="background-color: darkcyan;color: black;border: none;border-radius: 30px;width: 200px;height: 30px;margin-left: 420px;margin-top: 80px;">Explore Courses</button>
+        </div>
+        <div style="width: 100%;height: 100px;background-color: transparent;float: left;"></div>
+
+        <div style="width: 100%;height: 0.05px;background-color: gray;float: left;"></div>
+        <div style="width: 100%;height: 50px;background-color: transparent;float: left;"></div>
+        <div style="width: 100%;height: 200px;background-color: transparent;float: left;">
+            <div style="width: 150px;height: 100px;background-color: transparent;float: left;margin-left: 50px;color: white;">
+                <img style="width: 20px;" src="https://ik.imagekit.io/sheryians/Sheryians_logo_EzwgcppnD?updatedAt=1701272916848" alt=""><br>
+                <span style="font-size: 10px;">Let's connect with our socials</span>
+            </div>
+            <div style="width: 150px;height: 200px;background-color: transparent;float: left;margin-left: 100px;color: white;">
+                <h4>Company</h4>
+                <h6 style="padding-top: 15px;font-size: 10px;" id="q">About Us</h6>
+                <h6 style="padding-top: 10px;font-size: 10px;" id="q">Support</h6>
+                <h6 style="padding-top: 10px;font-size: 10px;" id="q">Privacy Policy</h6>
+                <h6 style="padding-top: 10px;font-size: 10px;" id="q">Terms and Condition</h6>
+                <h6 style="padding-top: 10px;font-size: 10px;" id="q">Pricing and Refund</h6>
+                <h6 style="padding-top: 10px;font-size: 10px;" id="q">Hire From us</h6>
+                <h6 style="padding-top: 10px;font-size: 10px;" id="q">Bug Bounty</h6>
+            </div>
+            <div style="width: 150px;height: 200px;background-color: transparent;float: left;margin-left: 100px;color: white;">
+                <h4>Community</h4>
+                <h6 style="padding-top: 15px;font-size: 10px;" id="q">Inertia</h6>
+                <h6 style="padding-top: 10px;font-size: 10px;" id="q">Discord</h6>
+            </div>
+            <div style="width: 150px;height: 200px;background-color: transparent;float: left;margin-left: 100px;color: white;">
+                <h4>Get In Touch</h4>
+                <h6 style="padding-top: 15px;font-size: 10px;" id="q">+2345678,</h6>
+                <h6 style="padding-top: 10px;font-size: 10px;" id="q">+456789</h6>
+                <h6 style="padding-top: 10px;font-size: 10px;" id="q">@jtehgfbn.com</h6>
+                <h6 style="padding-top: 10px;font-size: 10px;" id="q">hagsd,hgas,<br>yjzhkhxj,hgakj</h6>
+            </div>
+        </div>
+        <div style="width: 100%;height: 30px;background-color: transparent;float: left;"></div>
+        <div style="width: 100%;height: 0.05px;background-color: gray;float: left;"></div>
+
+        <div style="width: 100%;height: 50px;background-color: transparent;float: left;color: white;padding-top: 10px;">
+            <center><h6>Copyright @ 2024 Sheryians Pvt.Ltd. <br> All Rights Reserved.</h6></center>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div style="width: 20%;height: 300px;background-color: transparent;float: left;"></div>
+        <div style="width: 80%;height: 300px;background-color: transparent;float: left;">
+            <img style="float: left;width: 200px;" src="https://ik.imagekit.io/sheryians/courses_gif/undefined-maxresdefault_5-AHh9_1Y.jpg" alt="">
+        </div> -->
+        <!-- <img style="float: left;width: 200px;" src="https://ik.imagekit.io/sheryians/courses_gif/Front-End_Domination__Create_Anything_with_Code-FRONTENDTHUBNAIL_Wf8WqcNJx.jpg" alt="">
+        <img style="float: left;width: 200px;" src="https://ik.imagekit.io/sheryians/courses_gif/undefined-backend_0.5x_Medium_wgHDU-5rPt.png" alt="">
+        <img style="float: left;width: 200px;" src="https://ik.imagekit.io/sheryians/courses_gif/undefined-apti_reasoning_45vyAnZ4y.jpeg" alt="">
+        <img style="float: left;width: 200px;" src="https://ik.imagekit.io/sheryians/courses_gif/undefined-javaas_Large_jY0Wighav__6PygWBZQ.jpeg" alt=""> -->
+    <!-- </div> -->
+</body>
+</html>

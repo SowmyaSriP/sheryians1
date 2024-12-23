@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
+#logo{
+    width: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+#code{
+    font-size: 10px;
+    font-family: cursive;
+    padding-left: 3px;
+    color: white;
+}
+#home{
+    font-size: 10px;
+    font-family: cursive;
+    padding-left: 450px;
+    color: white;
+}
+#course{
+    font-size: 10px;
+    font-family: cursive;
+    padding-left: 20px;
+    color: white;
+}
+#boot{
+    font-size: 10px;
+    font-family: cursive;
+    padding-left: 20px;
+    color: white;
+}
+#call{
+    font-size: 10px;
+    font-family: cursive;
+    padding-left: 20px;
+    color: white;
+}
+#sign{
+    font-size: 10px;
+    font-family: cursive;
+    padding-left: 20px;
+    color: white;
+}
+#button{
+    border: none;
+    font-size: 10px;
+    font-family: cursive;
+    color: white;
+}
+nav{
+    position: fixed;
+}
+body{
+    background-image: linear-gradient(85deg,rgb(34,78,34),black);
+}

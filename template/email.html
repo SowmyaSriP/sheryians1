@@ -1,0 +1,35 @@
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'sign.css' %}">
+{% endblock css %}
+
+<body style="background-color: black;">
+    <nav style="width: 100%;height: 30px;background-color: transparent;">
+        <img id="logo" src="https://ik.imagekit.io/sheryians/Sheryians_logo_EzwgcppnD" alt="">
+        <a href="{% url 'app1:demo' %}" id="code">Sheryians coding school</a>
+        <a href="{% url 'app1:home' %}" id="home">Home</a>
+        <a href="{% url 'app1:course' %}" id="course">Courses</a>
+        <a href="{% url 'app1:boot' %}" id="course">Bootcamp(Kodr)</a>
+        <a href="{% url 'app1:call' %}" id="call">Request Callback</a>
+        <a href="{% url 'app1:sign' %}" id="sign"><Button id="button" style="background-color: darkcyan;">Sign in</Button></a>
+    </nav>
+
+    <div style="width: 100%;height: 50px;background-color: transparent;"></div>
+    <div style="width: 300px;height: 350px;background-color: black;margin-left: 350px;margin-top: 50px;">
+        <span style="color: white;font-size: 20px;">Sign In</span><br><br>
+        <a href="{% url 'app1:sign' %}"><u style="color: darkcyan;"><span style="color: white;font-size: 12px;">Phone</span></u></a>
+        <a href="{% url 'app1:email' %}"><span style="color: white;font-size: 12px;padding-left: 10px;">Email</span></a><br><br>
+        <span style="color: gray;font-size: 10px;">Email Address</span><br>
+        <button style="color: whitesmoke;background-color: rgb(118, 115, 115);width: 250px;margin-top: 10px;padding-right: 120px;font-size: 10px;border: none;height: 20px;">Enter Your Email Address</button><br><br>
+        <span style="color: gray;font-size: 10px;">Password</span><br>
+        <button style="color: whitesmoke;background-color: rgb(118, 115, 115);width: 250px;margin-top: 10px;padding-right: 120px;font-size: 10px;border: none;height: 20px;">Enter Your Password</button><br><br>
+        <button style="background-color: darkcyan;border-radius: 30px;width: 70px;border: none;height: 20px;margin-left: 180px;">continue</button><br><br>
+        <div style="width: 120px;height: 0.5px;background-color: gray;color: white;float: left;"></div>
+        <span style="color: white;float: left;padding-left: 10px;margin-top: -5px;color: gray;font-size: 10px;">Or</span>
+        <div style="width: 120px;height: 0.5px;background-color: gray;color: white;float: left;margin-left: 10px;"></div><br><br>
+        <button style="background-color: black;border-width: 0.5px;width: 300px;height: 30px;color: white;border-radius: 30px;border-color: white;">Continue with Google</button><br><br>
+        <button style="background-color: black;border-width: 0.5px;width: 300px;height: 30px;color: white;border-radius: 30px;border-color: white;">Create a New Account</button>
+    </div>
+    
+</body>
